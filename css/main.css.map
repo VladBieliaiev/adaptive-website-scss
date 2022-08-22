@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAAA;EACG,sBAAA;ACCH;ADAG;EACG,eAAA;ACEN","file":"main.css","sourcesContent":["body{\r\n   background-color: aqua;\r\n   p{\r\n      font-size: 50px;\r\n   }\r\n}","body {\n  background-color: aqua;\n}\nbody p {\n  font-size: 50px;\n}"]}
