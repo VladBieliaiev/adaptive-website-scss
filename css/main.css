@@ -91,6 +91,10 @@ video {
   vertical-align: baseline;
 }
 
+html {
+  position: relative;
+}
+
 /* make sure to set some focus styles for accessibility */
 :focus {
   outline: 0;
@@ -439,14 +443,112 @@ body {
   font-family: "Heebo", sans-serif;
 }
 
-.container {
+[class*=__container] {
   width: 1152px;
   margin: 0 auto;
+  border: 1px solid red;
 }
 @media (max-width: 1352px) {
-  .container {
+  [class*=__container] {
     width: 100%;
     padding: 0 15px;
+  }
+}
+@media (max-width: 1024px) {
+  [class*=__container] {
+    max-width: 970px;
+    color: green;
+  }
+}
+@media (max-width: 792px) {
+  [class*=__container] {
+    max-width: 750px;
+  }
+}
+@media (max-width: 480px) {
+  [class*=__container] {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+* {
+  border: 1px solid red;
+}
+
+.header__content {
+  max-width: 1044px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .header__content {
+    padding: 0 2.5rem;
+  }
+}
+.header .menu {
+  align-items: center;
+}
+.header .menu__list {
+  display: flex;
+  justify-content: flex-end;
+  height: 5rem;
+  padding: 10px 0;
+  align-items: center;
+}
+.header .menu li {
+  margin-left: 2rem;
+}
+.header .menu__link {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.87rem;
+  color: #000;
+  text-decoration: none;
+}
+.header .menu__link:hover {
+  color: #FF6464;
+  transition: 0.2s;
+}
+.header .menu__icon {
+  display: none;
+}
+@media (max-width: 480px) {
+  .header .menu__icon {
+    display: block;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 0.5rem;
+    right: 2rem;
+    z-index: 5;
+  }
+  .header .header__content {
+    display: block;
+    transform: translate(0px, -100%);
+    transition: transform 0.5s ease 0s;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 4;
+    overflow: auto;
+  }
+  .header .menu__list {
+    display: block;
+    margin-top: 7rem;
+    text-align: center;
+  }
+  .header .menu__link {
+    font-size: 2rem;
+  }
+  .header .menu li {
+    padding: 0;
+    margin: 0 0 4rem 0;
+  }
+  .header .active {
+    display: block;
+    transform: translate(0px, 0%);
   }
 }
 
