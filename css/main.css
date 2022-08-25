@@ -450,14 +450,6 @@ textarea {
   color: #21243D;
 }
 
-.title {
-  font-family: "Heebo", sans-serif;
-  font-weight: 700;
-  font-size: 2.75rem;
-  line-height: 3.75rem;
-  color: #21243D;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -592,6 +584,11 @@ body {
   padding: 1rem 7rem 0 0;
 }
 .hello__title {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: 2.75rem;
+  line-height: 3.75rem;
+  color: #21243D;
   padding-bottom: 2rem;
 }
 .hello__text {
@@ -644,12 +641,97 @@ body {
   .hello__content {
     padding: 2rem 0 0 0;
   }
-  .hello .title {
+  .hello__title {
     font-size: 2rem;
     line-height: 2.5rem;
   }
-  .hello .text {
+  .hello__text {
     padding-bottom: 1.6rem;
+  }
+}
+
+.recent-posts {
+  display: flex;
+  background-color: #EDF7FA;
+  padding: 0 1rem 2rem;
+}
+.recent-posts__container {
+  display: flex;
+  flex-direction: column;
+}
+.recent-posts__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.187rem 0;
+}
+@media (max-width: 480px) {
+  .recent-posts__header {
+    justify-content: center;
+  }
+  .recent-posts__header a {
+    display: none;
+  }
+}
+.recent-posts__title {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 1.37rem;
+  line-height: 3.75rem;
+  color: #21243D;
+}
+.recent-posts__wiew-all {
+  text-decoration: none;
+  color: #00A8CC;
+  font-family: "Heebo", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.recent-posts__items {
+  display: flex;
+  gap: 1.25rem;
+}
+@media (max-width: 792px) {
+  .recent-posts__items {
+    flex-direction: column;
+  }
+}
+
+.recent-post {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.recent-post__title {
+  font-weight: 700;
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+  color: #21243D;
+  padding: 1.5rem 1.375rem 1rem;
+}
+@media (max-width: 480px) {
+  .recent-post__title {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    padding: 0.75rem 1.25rem;
+  }
+}
+.recent-post__info {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #21243D;
+  padding: 0 1.375rem 0.68rem;
+}
+.recent-post__info span {
+  padding: 0 1.5rem;
+}
+.recent-post__text {
+  padding: 0 1.63rem 3rem 1.4rem;
+}
+@media (max-width: 480px) {
+  .recent-post__text {
+    padding: 0 1.25rem 1.3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

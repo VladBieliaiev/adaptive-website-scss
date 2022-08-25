@@ -1,0 +1,105 @@
+.recent-posts {
+
+      display: flex;
+      background-color: #EDF7FA;
+      padding: 0 1rem 2rem;
+
+   &__container {
+      display: flex;
+      flex-direction: column;
+   
+   }
+
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.187rem 0;
+      @include small{
+         justify-content: center;
+         a{
+            display: none;
+         }
+      }
+   }
+   &__title {
+      font-family: $font-heebo;
+      font-weight: 400;
+      font-size: 1.37rem;
+      line-height: 3.75rem;
+      color:$color-dark;
+    
+   }
+
+   &__wiew-all {
+      text-decoration: none;
+      color: $color-secondary;
+      font-family: $font-heebo;
+      font-size: 1rem;
+      line-height: 1.5rem;
+   }
+
+   &__items {
+      display: flex;
+      gap:1.25rem;
+   }
+   @include mobile {
+      &__items{
+         flex-direction: column;
+      }
+   }
+}
+
+
+.recent-post {
+   display: flex;
+   flex-direction: column;
+   background-color: $color-white;
+   
+
+   &__title {
+      font-weight: 700;
+      font-size: 1.625rem;
+      line-height: 2.375rem;
+      color:$color-dark;
+      padding: 1.5rem 1.375rem 1rem ;
+
+      @include small{
+         font-size: 1.375rem;
+         line-height: 1.875rem;
+         padding: 0.75rem 1.25rem;
+      }
+   }
+
+   &__info {
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 1.625rem;
+      color: $color-dark;
+      padding: 0 1.375rem 0.68rem;
+
+      span {
+         padding: 0 1.5rem;
+      }
+   }
+
+   &__text {
+      padding: 0 1.63rem 3rem 1.4rem;
+      
+      @include small{
+         padding: 0 1.25rem 1.30rem;
+
+      }
+   }
+
+
+   
+}
+
+
+.title {
+}
+
+
+.text {
+}

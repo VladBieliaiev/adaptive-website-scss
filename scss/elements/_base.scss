@@ -10,7 +10,7 @@ body {
    width: 857px;
    margin: 0 auto;
    border: 1px solid red;
-// 
+
    @include notebook {
       width: 857px;
       padding: 0 15px;
