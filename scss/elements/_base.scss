@@ -7,23 +7,30 @@ body {
 }
 
 [class *= "__container"] {
-   width: 1152px;
+   width: 857px;
    margin: 0 auto;
    border: 1px solid red;
-
+// 
    @include notebook {
-      width: 100%;
+      width: 857px;
       padding: 0 15px;
+      border: 1px solid green;
+
    }
    @include tablet {
       max-width: 970px;
-      color: green;
+      border: 1px solid pink;
+
    }
    @include mobile{
       max-width: 750px;
+      border: 1px solid blue;
+
    }
    @include small{
       max-width: none;
       padding: 0 10px;
+      border: 1px solid brown;
+
    }
 }

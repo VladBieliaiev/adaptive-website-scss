@@ -3,10 +3,17 @@
    font-family: $font-heebo;
    font-weight: 500;
    font-size: 1.25rem;
+   text-decoration:none; 
    line-height: 1.8rem;
+   display: inline-flex;
    border-radius: 2px;
    background-color: $color-primary;
    border: none;
    padding: 0.55rem 1.3rem 0.55rem 1.3rem;
    text-align: center;
+
+   &:hover{
+      background-color: #ff8e8e;
+      transition: 0.3s;
+   }
 }

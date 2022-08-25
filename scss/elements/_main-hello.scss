@@ -1,0 +1,89 @@
+.hello {
+   display: flex;
+   padding: 8rem 1rem 4.5rem ;
+
+   
+   &__container {
+      display: flex;
+      max-width: auto;
+      flex: 0 1 auto;
+
+    }
+
+   &__content {
+      padding: 1rem 7rem 0 0;
+      
+   }
+
+   &__title {
+      padding-bottom: 2rem;
+   }
+
+   &__text {
+      padding-bottom: 2.3rem;
+   }
+
+   &__avatar {
+         flex: 0 0 15rem;
+         height: 15rem;
+         position: relative;
+         border-radius: 50%;
+         overflow: hidden;
+         box-shadow: -5px 10px 0 0 #EDF7FA;
+      img{
+         max-width: 140%;
+         position: absolute;
+         left: -70px;
+      }
+   }
+   @include mobile {
+      padding: 7rem 1rem 3.6rem ;
+      &__container {
+         align-items: center;
+         text-align: center;
+         flex-direction: column-reverse;
+      }
+      &__content {
+         padding: 1rem 0rem 0 0;
+         align-items: center;
+
+         
+      }
+      &__title {
+         padding-bottom: 0.5rem;
+      }
+   
+      &__text {
+         padding-bottom: 1.3rem;
+      }
+      &__avatar {
+         width: 15rem;
+      }
+   }
+
+   @include small{
+
+      &__avatar {
+         flex: 0 0 10rem;
+         width: 10rem;
+         img{
+            left: -50px;
+         }
+      }
+      
+      &__content {
+         padding: 2rem 0 0 0;
+      }
+
+      .title{
+         font-size: 2rem;
+         line-height: 2.5rem;
+      }  
+      .text{
+         padding-bottom: 1.6rem;
+      } 
+   }
+}
+
+
+
