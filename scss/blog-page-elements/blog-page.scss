@@ -1,0 +1,100 @@
+.blog {
+   display: flex;
+   
+
+   &__container {
+      padding-top: 5rem;
+
+      @include mobile {
+         padding-top: 4.6rem;
+      }
+   }
+
+   &__content {
+      padding: 0 5rem;
+      @include mobile{
+         padding: 1rem;
+      }
+      @include small{
+         padding: 0;
+      }
+   
+   }
+
+   &__title {
+      padding-bottom: 1.4375rem;
+      @include mobile {
+         font-size: 1.875rem;
+         line-height: 1.75rem;
+         padding: 0;
+      }
+   }
+
+}
+
+.item-blog {
+
+   &__title {
+      font-weight: 500;
+      font-size: 1.875rem;
+      line-height: 2.75rem;
+      color:$color-dark;
+      padding: 2rem 0 1rem;
+
+      @include mobile {
+         font-size: 1.625rem;
+         line-height: 1.75rem;
+         padding: 2rem 0 0.3rem;
+         
+      }
+   }
+
+   .blog-info{
+      display: flex;
+      align-items: center;
+      padding: 0 0 0.6875rem 0;
+
+      @include mobile {
+         padding: 0 0 1rem 0;
+      }
+
+      &__date{
+         font-weight: 400;
+         font-size: 1.25rem;
+         line-height: 1.8rem;
+         color: $color-dark;
+
+         @include mobile {
+            font-size: 1rem;
+            line-height: 1.5rem;
+         }
+      }
+
+      &__category{
+         font-weight: 400;
+         font-size: 1.25rem;
+         line-height: 1.8rem;
+         color: $color-light;
+
+         @include mobile {
+            font-size: 1rem;
+            line-height: 1.5rem;
+         }
+      }
+
+      span {
+         padding: 0 1.25rem;
+
+         @include mobile {
+            padding: 0 0.9rem;
+         }
+      }
+   }
+
+
+   &__text {
+      padding: 0 0 1.875rem 0;
+      border-bottom: 1px solid #E0E0E0;
+   }
+}
+

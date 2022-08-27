@@ -1,9 +1,17 @@
 * {
    box-sizing: border-box;
 }
+html,body{
+   height: 100%;
+}
 
 body {
    font-family: $font-heebo;
+   display: flex;
+   flex-direction: column;
+}
+main {
+   flex: 1 1 auto;
 }
 
 [class *= "__container"] {
@@ -14,23 +22,23 @@ body {
    @include notebook {
       width: 857px;
       padding: 0 15px;
-      // border: 1px solid green;
+      border: 1px solid green;
 
    }
    @include tablet {
       max-width: 970px;
-      // border: 1px solid pink;
+      border: 1px solid pink;
 
    }
    @include mobile{
       max-width: 750px;
-      // border: 1px solid blue;
+      border: 1px solid blue;
 
    }
    @include small{
       max-width: none;
       padding: 0 10px;
-      // border: 1px solid brown;
+      border: 1px solid brown;
 
    }
 }

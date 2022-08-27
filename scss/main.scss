@@ -10,13 +10,19 @@
 @import "settings/title";
 
 
-// ----------ELEMENTS
+// ----------HOME_PAGE_ELEMENTS
 
-@import "elements/base";
-@import "elements/header";
-@import "elements/main-hello";
-@import "elements/_main-posts";
-@import "elements/_main-features-works";
-@import "elements/_footer";
+@import "home-page-elements/base";
+@import "home-page-elements/header";
+@import "home-page-elements/main-hello";
+@import "home-page-elements/_main-posts";
+@import "home-page-elements/_main-features-works";
+@import "home-page-elements/_footer";
+
+
+//-----------BLOG_PAGE_ELEMENTS
+
+@import "blog-page-elements/blog-page.scss"
+
 
 
