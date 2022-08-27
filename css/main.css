@@ -965,4 +965,63 @@ footer {
 .work a {
   padding-bottom: 3rem;
 }
+
+.design-dashboards {
+  display: flex;
+}
+.design-dashboards__container {
+  border: 1px solid red;
+  padding: 5rem 0 1.68rem;
+}
+.design-dashboards__content {
+  padding: 0 5rem;
+}
+@media (max-width: 792px) {
+  .design-dashboards__content {
+    padding: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .design-dashboards__content {
+    padding: 0.3rem;
+  }
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 792px) {
+  .article {
+    display: block;
+  }
+}
+.article__title {
+  font-size: 2.125rem;
+  line-height: 3.125rem;
+  padding-bottom: 1.875rem;
+}
+.article__info {
+  color: #21243D;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+}
+.article__info span {
+  color: white;
+  font-weight: 900;
+  font-size: 1.125rem;
+  background-color: #FF6464;
+  padding: 0 0.6rem;
+  border-radius: 1rem;
+  margin: 0 1.625rem 0 0;
+}
+.article__text {
+  padding: 1.5rem 0 2.875rem;
+}
+@media (max-width: 792px) {
+  .article__image {
+    min-width: 10%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

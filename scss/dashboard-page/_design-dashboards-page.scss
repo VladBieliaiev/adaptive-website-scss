@@ -1,0 +1,94 @@
+.design-dashboards {
+   display: flex;
+   
+   &__container {
+      border: 1px solid red;
+      padding: 5rem 0 1.68rem;
+   
+   }
+
+   &__content {
+      padding: 0 5rem;
+      @include mobile{
+         padding: 1rem;
+      }
+      @include small{
+         padding: 0.3rem;
+      }
+   }
+}
+
+.article {
+   display: flex;
+   flex-direction: column;
+   @include mobile{
+      display: block;
+   }
+   
+   &__title {
+      font-size: 2.125rem;
+      line-height: 3.125rem;
+      padding-bottom: 1.875rem;
+
+   }
+
+   &__info {
+      color:$color-dark;
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 1.8rem;
+
+      span{
+         color:$color-white;
+         font-weight: 900;
+         font-size: 1.125rem;
+         background-color:$color-primary;
+         padding: 0 0.6rem;
+         border-radius: 1rem;
+         margin: 0 1.625rem 0 0;
+      }
+   }
+
+
+
+   &__text {
+      padding: 1.5rem 0 2.875rem; 
+   
+   }
+
+   &__image {
+      @include mobile{
+         min-width: 10%;
+      }
+   }
+
+  
+
+   // &__img {
+   //   padding: 0 1.125rem 0.9rem 0;
+   //   flex: 0 0 15.3rem;
+   //   display: block;
+   //   @include mobile{
+      
+   //    img{
+   //       display: block;
+   //       min-width: 100%;
+   //       object-fit:contain;
+   //       vertical-align: bottom;
+   //    }
+   //   }
+   // }
+}
+// .design-dashboards
+// .design-dashboards
+
+// .article
+// .title {
+// }
+// .article
+// .article
+// .arctilce
+// .article
+// .text {
+// }
+// .article
