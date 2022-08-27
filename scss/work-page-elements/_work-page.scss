@@ -1,0 +1,56 @@
+.work {
+   display: flex;
+
+   &__container {
+      padding: 5rem 0 3.75rem 0;
+   }
+
+   &__content {
+      padding: 0 5rem;
+      @include mobile{
+         padding: 1rem;
+      }
+      @include small{
+         padding: 0.3rem;
+      }
+   
+   }
+
+   &__title {
+   
+   }
+
+   .works-section {
+   
+      &__item{
+         padding: 2.5rem 0 0 0;
+      }
+   }
+
+   a{
+      padding-bottom: 3rem;
+   }
+
+}
+// .work
+// .work
+// .work
+// .title {
+// }
+
+// .work-block {
+// }
+// .work-block__img {
+// }
+// .work-block-description {
+// }
+// .work-block-description__title {
+// }
+// .work-block-description__info {
+// }
+// .work-block-description__text {
+// }
+// .text {
+// }
+// .work-block__description {
+// }

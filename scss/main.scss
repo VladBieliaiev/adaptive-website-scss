@@ -8,6 +8,7 @@
 @import "settings/mixins";
 @import "settings/text";
 @import "settings/title";
+@import "settings/works-block";
 
 
 // ----------HOME_PAGE_ELEMENTS
@@ -22,7 +23,10 @@
 
 //-----------BLOG_PAGE_ELEMENTS
 
-@import "blog-page-elements/blog-page.scss"
+@import "blog-page-elements/blog-page";
 
 
+//-----------WORK_PAGE_ELEMENTS
+
+@import "work-page-elements/work-page";
 
