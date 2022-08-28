@@ -1001,13 +1001,22 @@ footer {
   line-height: 3.125rem;
   padding-bottom: 1.875rem;
 }
+@media (max-width: 792px) {
+  .article__title {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    padding-bottom: 1.4rem;
+  }
+}
 .article__info {
   color: #21243D;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.8rem;
+  display: flex;
 }
 .article__info span {
+  display: block;
   color: white;
   font-weight: 900;
   font-size: 1.125rem;
@@ -1016,12 +1025,22 @@ footer {
   border-radius: 1rem;
   margin: 0 1.625rem 0 0;
 }
+@media (max-width: 792px) {
+  .article__info span {
+    height: 100%;
+  }
+}
 .article__text {
-  padding: 1.5rem 0 2.875rem;
+  padding: 1.5rem 0 1.25rem;
+}
+.article__image img {
+  width: 100%;
+  padding: 1.25rem 0;
 }
 @media (max-width: 792px) {
-  .article__image {
-    min-width: 10%;
+  .article__image img {
+    width: 100%;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
