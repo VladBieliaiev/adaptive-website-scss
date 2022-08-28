@@ -536,26 +536,22 @@ main {
   [class*=__container] {
     width: 857px;
     padding: 0 15px;
-    border: 1px solid green;
   }
 }
 @media (max-width: 1024px) {
   [class*=__container] {
     max-width: 970px;
-    border: 1px solid pink;
   }
 }
 @media (max-width: 792px) {
   [class*=__container] {
     max-width: 750px;
-    border: 1px solid blue;
   }
 }
 @media (max-width: 480px) {
   [class*=__container] {
     max-width: none;
     padding: 0 10px;
-    border: 1px solid brown;
   }
 }
 
@@ -970,7 +966,6 @@ footer {
   display: flex;
 }
 .design-dashboards__container {
-  border: 1px solid red;
   padding: 5rem 0 1.68rem;
 }
 .design-dashboards__content {
